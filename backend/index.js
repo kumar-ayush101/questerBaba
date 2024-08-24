@@ -22,6 +22,12 @@ app.use(cors({
 import mainRouter from './routes/mainRouter.js';
 app.use('/api/v2', mainRouter);
 
+app.get('/',(req,res)=>{
+  res.send({
+    activeStatus:true,
+    error:false,
+  })
+})
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
