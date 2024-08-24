@@ -1,0 +1,49 @@
+
+.post-card {
+  display: flex; 
+  flex-direction: column; 
+  min-width: 250px; 
+  max-width: 100%; 
+  box-sizing: border-box; 
+  padding: 1rem;
+  border: 1px solid #ddd; 
+  border-radius: 8px; 
+  background-color: #fff; 
+  
+}
+
+.post-actions {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  color: #ccc; 
+  background-color: #333; 
+  padding: 10px; 
+  border-radius: 4px; 
+}
+
+.vote-icon {
+  margin-right: 5px;
+  cursor: pointer;
+  color: #bbb; 
+  font-size: 20px;
+  transition: color 0.2s ease;
+}
+
+.vote-icon.liked {
+  color: #1e90ff; 
+}
+
+.vote-icon.disliked {
+  color: #9e2914; 
+}
+
+.vote-icon:hover {
+  color: #2f2020; 
+}
+
+span {
+  margin-right: 15px;
+  font-size: 16px;
+  color: #f6f2f2; 
+}

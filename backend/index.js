@@ -1,0 +1,29 @@
+import express from 'express';
+import dotenv from 'dotenv'; 
+import { connectMongoose } from './databases/connection1.databases.js';
+import cors from 'cors';
+
+
+dotenv.config();
+
+const app = express();
+
+app.use(express.json());
+
+app.use(express.urlencoded({ extended: true }));
+
+connectMongoose();
+
+
+app.use(cors({
+  origin: ['http://localhost:5173'],
+}));
+
+import mainRouter from './routes/mainRouter.js';
+app.use('/api/v2', mainRouter);
+
+
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Running on http://localhost:${PORT}`);
+});

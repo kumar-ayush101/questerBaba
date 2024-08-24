@@ -1,0 +1,60 @@
+/* src/SignUp.css */
+
+/* Container styling */
+.sign-up-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #444; /* Darker border for dark mode */
+  border-radius: 5px;
+  background-color: #1e1e1e; /* Dark background color */
+  color: #e0e0e0; /* Light text color */
+}
+
+/* Heading styling */
+.sign-up-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #e0e0e0; /* Light text color for heading */
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Label styling */
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #e0e0e0; /* Light text color for labels */
+}
+
+/* Input styling */
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  background-color: #333; /* Dark background for inputs */
+  border: 1px solid #555; /* Darker border for inputs */
+  color: #e0e0e0; /* Light text color for inputs */
+  border-radius: 4px;
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff; /* Bright blue background */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
