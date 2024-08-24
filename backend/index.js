@@ -16,7 +16,7 @@ connectMongoose();
 
 
 app.use(cors({
-  origin: ['http://localhost:5173'],
+  origin: ['https://quester-baba-pscl.vercel.app'],
 }));
 
 import mainRouter from './routes/mainRouter.js';
